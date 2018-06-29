@@ -1,0 +1,78 @@
+/*
+Theme Name: Portfolio FranciscoMat (Twentyseventeen Child)
+Theme URI: http://portfolio.franciscomat.com
+Template: twentyseventeen
+Version: 1.0
+Author: Francisco Mat
+Author URI: http://www.franciscomat.com
+Description: Made for my portfolio (Child Theme for Twentyseventeen Cyberchumps).
+
+
+*/
+@import url("../twentyseventeen/style.css");
+
+
+body.page-template-template-full-width #content #primary {
+	max-width: 100%;
+}
+
+body.page-template-template-full-width #content #primary .entry-header,
+body.page-template-template-full-width #content #primary .entry-content {
+    float: none;
+    width: 100%;
+}
+
+body.page-template-template-full-width #content #primary .entry-header {
+    margin-bottom: 4em;
+}
+
+/*#logo, #logo img {
+	width: 100%;
+}
+#menu-principal-1 {
+	width: 100%;
+}
+#menu-principal-1 .menu-item-1964 {
+	/*float: right !important;*
+}
+#menu-principal-1 .menu-item-1964 a {
+	/*text-transform: uppercase;
+	background: #3F5E94;
+	color: #FFF !important;*
+}*/
+
+button[data-filter=".iso_45"],button[data-filter=".iso_58"],button[data-filter=".iso_79"],button[data-filter=".iso_76"] {
+	background-color: #98d !important;
+}
+
+/**/
+.rt-equal-height {
+	height: 420px;
+	overflow: hidden;
+}
+
+/*RESPONSIVE YOUTUBE**/
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 0;
+	overflow: hidden;
+}
+
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.entry-content img, 
+.entry-content iframe, 
+.entry-content object, 
+.entry-content embed {
+        max-width: 100%;
+}
