@@ -8,7 +8,11 @@
  * https://gist.github.com/Netzberufler/792a74d63f24aadcad444f4c9d415c11
  */
 get_header(); ?>
-
+<style type="text/css">
+	.entry-content a {
+		box-shadow: none !important;
+	}
+</style>
 <div class="wrap">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -30,9 +34,10 @@ get_header(); ?>
 		Logos
 		<?php
 		$args = array(
-		    'post_type' => 'attachment',
-		    'post_status' => 'published',
-		    'numberposts' => -1,
+		    'post_type'		=> 'attachment',
+		    'post_status'	=> 'published',
+		    'numberposts'	=> -1,
+		    'category'		=> '119',
 		);
 
 		$attachments = get_posts($args);
@@ -45,7 +50,7 @@ get_header(); ?>
 		        $url = get_attachment_link($attachment->ID);// extraigo la _posturl del attachmnet      
 		        $img = wp_get_attachment_url($attachment->ID);
 		        $title = get_the_title($attachment->post_parent);//extraigo titulo
-		        echo '<a href="'.$url.'"><img title="'.$title.'" src="'.$img.'" width="20%"></a>';
+		        echo '<a href="'.$url.'"><img title="'.$title.'" src="'.$img.'" style="width:30%; float:left; padding:1%;"></a>';
 		        echo "</div>";
 		    }   
 		}
