@@ -31,7 +31,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 	<aside id="secondary" class="widget-area" role="complementary">
-		Logos
+		<h2><a href="https://portfolio.franciscomat.com/category/product-type/logo/">Logos</a></h2>
 		<?php
 		$args = array(
 		    'post_type'		=> 'attachment',
@@ -50,7 +50,7 @@ get_header(); ?>
 		        $url = get_attachment_link($attachment->ID);// extraigo la _posturl del attachmnet      
 		        $img = wp_get_attachment_url($attachment->ID);
 		        $title = get_the_title($attachment->post_parent);//extraigo titulo
-		        echo '<a href="'.$url.'"><img title="'.$title.'" src="'.$img.'" style="width:30%; float:left; padding:1%;"></a>';
+		        echo '<a href="'.$url.'"><img title="'.$title.'" src="'.$img.'" style="width:33%; float:left; padding:1%;"></a>';
 		        echo "</div>";
 		    }   
 		}
