@@ -27,7 +27,7 @@ get_header(); ?>
 			        $url = get_attachment_link($attachment->ID);// extraigo la _posturl del attachmnet      
 			        $img = wp_get_attachment_url($attachment->ID);
 			        $title = get_the_title($attachment->post_parent);//extraigo titulo
-			        echo '<a href="'.$url.'"><img title="'.$title.'" src="'.$img.'" style=""></a>';
+			        echo '<a href="'.$url.'"><img title="'.$title.'" src="'.$img.'" style="background:#FFF;"></a>';
 			        echo '<div style="position:absolute; right:14px; bottom:14px; background:#000;">'.get_the_date("Y", $attachment->ID).'</div>';
 			        #echo '<div style="position:relative;margin-left:-50px;">'.get_the_date("Y", $attachment->ID).'</div>';
 			        echo "</div>";

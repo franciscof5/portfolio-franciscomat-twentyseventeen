@@ -9,9 +9,21 @@
  */
 get_header(); ?>
 <style type="text/css">
+	.entry-content img{
+		background: #FFF;
+	}
 	.entry-content a {
 		box-shadow: none !important;
 	}
+	#primary {
+		width: 52% !important;
+	}
+	#secondary {
+		width: 43% !important;
+	}
+	/*#primary, #secondary {
+		width: 50% !important;
+	}*/
 </style>
 <div class="wrap">
 	<div id="primary" class="content-area">
@@ -46,11 +58,11 @@ get_header(); ?>
 
 		if ($attachments) {
 		    foreach ($attachments as $attachment) {
-		    echo "<div class=\"post photo col3\">";
+		    echo "<div class=\"post photo col3\" style='width:25%; float:left; padding:1%;'>";
 		        $url = get_attachment_link($attachment->ID);// extraigo la _posturl del attachmnet      
 		        $img = wp_get_attachment_url($attachment->ID);
 		        $title = get_the_title($attachment->post_parent);//extraigo titulo
-		        echo '<a href="'.$url.'"><img title="'.$title.'" src="'.$img.'" style="width:33%; float:left; padding:1%;"></a>';
+		        echo '<a href="'.$url.'"><img title="'.$title.'" src="'.$img.'" style="background:#FFF;"></a>';
 		        echo "</div>";
 		    }   
 		}
