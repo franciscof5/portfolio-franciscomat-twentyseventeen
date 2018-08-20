@@ -63,7 +63,9 @@ body.page-template-template-full-width #content #primary .entry-content {
 body.page-template-template-full-width #content #primary .entry-header {
     margin-bottom: 4em;
 }
-
+body {
+	font-size: 12px;
+}
 /*#logo, #logo img {
 	width: 100%;
 }
@@ -120,4 +122,27 @@ button[data-filter=".iso_45"],button[data-filter=".iso_58"],button[data-filter="
 .entry-content object, 
 .entry-content embed {
         max-width: 100%;
+}
+/********* FONT SIZE ***************/
+.navigation-top,.navigation-top a, .menu-toggle {
+	font-size: 13px !important;
+}
+.site-description {
+	font-size: 18px !important;
+}	
+.site-title, .site-description {
+	
+}
+.site-branding-text {
+	background-color: rgba(3,33,57,0.7) !important;
+	padding: 15px;
+}
+.entry-title {
+	text-transform: uppercase;
+}
+.rpwe-title {
+	padding-top: 0;
+}
+.widget-title, h2.widget-title, .widget_categories {
+	font-size: 12px !important;
 }
