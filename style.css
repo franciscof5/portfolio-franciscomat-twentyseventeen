@@ -11,6 +11,16 @@ Description: Made for my portfolio (Child Theme for Twentyseventeen Cyberchumps)
 */
 @import url("../twentyseventeen/style.css");
 
+.twentyseventeen-front-page.has-header-image .custom-header-media,
+	.twentyseventeen-front-page.has-header-video .custom-header-media,
+	.home.blog.has-header-image .custom-header-media,
+	.home.blog.has-header-video .custom-header-media {
+		height: 224px !important;
+		/*height: 100vh;
+		max-height: 100%;*/
+		overflow: hidden;
+	}
+
 .rt-detail {
 	color: #222 !important;
 	padding: 0 10px 10px 10px !important;
