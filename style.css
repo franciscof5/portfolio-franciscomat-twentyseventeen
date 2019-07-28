@@ -11,6 +11,30 @@ Description: Made for my portfolio (Child Theme for Twentyseventeen Cyberchumps)
 */
 @import url("../twentyseventeen/style.css");
 
+@font-face {
+    font-family: 'lobster';
+    src: url('fonts/lobster/lobster_1.3-webfont.eot');
+    src: url('fonts/lobster/lobster_1.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/lobster/lobster_1.3-webfont.woff2') format('woff2'),
+         url('fonts/lobster/lobster_1.3-webfont.woff') format('woff'),
+         url('fonts/lobster/lobster_1.3-webfont.ttf') format('truetype'),
+         url('fonts/lobster/lobster_1.3-webfont.svg#lobster_1.3regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+.twentyseventeen-front-page.has-header-image .custom-header-media,
+	.twentyseventeen-front-page.has-header-video .custom-header-media,
+	.home.blog.has-header-image .custom-header-media,
+	.home.blog.has-header-video .custom-header-media {
+		height: 224px !important;
+		/*height: 100vh;
+		max-height: 100%;*/
+		overflow: hidden;
+	}
+
 .rt-detail {
 	color: #222 !important;
 	padding: 0 10px 10px 10px !important;
@@ -130,8 +154,15 @@ button[data-filter=".iso_45"],button[data-filter=".iso_58"],button[data-filter="
 .site-description {
 	font-size: 18px !important;
 }	
-.site-title, .site-description {
+.site-title {
 	
+}
+#top-menu a {
+	font-family: "lobster";
+}
+.site-title, .site-description {
+	font-family: "lobster";
+	text-transform: none;
 }
 .site-branding-text {
 	background-color: rgba(3,33,57,0.7) !important;
