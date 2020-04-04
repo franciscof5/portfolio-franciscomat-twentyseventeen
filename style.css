@@ -159,17 +159,31 @@ button[data-filter=".iso_45"],button[data-filter=".iso_58"],button[data-filter="
 }
 #top-menu a {
 	font-family: "lobster";
+	font-size: 20px !important;
+	padding: 0px 20px;
 }
-.site-title, .site-description {
+.site-title {
 	font-family: "lobster";
 	text-transform: none;
+}
+.site-description {
+	font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
 }
 .site-branding-text {
 	background-color: rgba(3,33,57,0.7) !important;
 	padding: 15px;
 }
 .entry-title {
-	text-transform: uppercase;
+	font-family: "lobster";
+	font-size: 24px !important;
+}
+.entry-title a {
+	color: #67A8CB !important;
+}
+.page .panel-content .entry-title,
+.page-title,
+body.page:not(.twentyseventeen-front-page) .entry-title {
+	text-transform: none !important;
 }
 .rpwe-title {
 	padding-top: 0;
