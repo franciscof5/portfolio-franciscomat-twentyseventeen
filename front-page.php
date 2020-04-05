@@ -18,76 +18,138 @@ get_header(); ?>
 	<main id="main" class="site-main" role="main">
 		<?php // Show the selected frontpage content.
 		if($_SERVER["HTTP_HOST"]=="www.franciscomat.com") { ?>
-		<style type="text/css">
-			h3 {font-family: "lobster", Arial, Helvetica, sans-serif; margin-bottom: 0px; font-size: 30px; color: #67A8CB !important;}
-			ul {padding-left: 10px;}
-			ul li {padding-bottom: 4px;}
-			hr {clear: both; background: #67A8CB !important;}
-		</style>
-		<div class="wrap">
-			<div class="entry-content">
-				<div style="display: flex; padding-top: 20px;">
+			<style type="text/css">
+				h3 {font-family: "lobster", Arial, Helvetica, sans-serif; margin-bottom: 0px; font-size: 30px; color: #67A8CB !important;}
+				ul {padding-left: 10px;}
+				ul li {padding-bottom: 4px;}
+				hr {clear: both; background: #67A8CB !important;}
+			</style>
+			<div class="wrap">
+				<div class="entry-content">
+					<div style="display: flex; padding-top: 20px;">
+						<div class="col-md-6 col-sm-12">
+							<img src="https://www.franciscomat.com/wp-content/uploads/shared-wp-posts-uploads-dir/2017/08/fmm-frente.jpeg" alt="Foto de Francisco" style="width: 200px; border-radius: 200px;-webkit-transform: translate(-50%, -50%);  
+	    transform: translate(-50%, -50%); position: absolute; top: 50%; left: 50%;" class="align-middle">
+						
+							<!--p style="text-align: center;">My site for professional and personal stuff, simple things related to ME</p-->
+						</div>
+
+						<div class="col-md-6 col-sm-12">
+							<h3>Posts Brasil</h3>
+							<?php echo do_shortcode('[display-posts tag="lang-pt"]'); ?>
+						</div>
+					</div>
+
+					<hr>
+
 					<div class="col-md-6 col-sm-12">
-						<img src="https://www.franciscomat.com/wp-content/uploads/shared-wp-posts-uploads-dir/2017/08/fmm-frente.jpeg" alt="Foto de Francisco" style="width: 200px; border-radius: 200px;-webkit-transform: translate(-50%, -50%);  
-    transform: translate(-50%, -50%); position: absolute; top: 50%; left: 50%;" class="align-middle">
+						<h3>Posts Spañol</h3>
+						<?php echo do_shortcode('[display-posts tag="lang-es"]'); ?>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
+						<h3>Posts in English</h3>
+						<?php echo do_shortcode('[display-posts tag="lang-en"]'); ?>
+					</div>
+
+					<hr>
+
+					<div class="col-md-6 col-sm-12">
+						<h3>CursoWP</h3>
+						<?php echo do_shortcode('[RSSImport feedurl="https://www.cursowp.com.br/feed/"]'); ?>
+					</div>
+
+					<div class="col-md-6 col-sm-12">
+						<h3>Hortical</h3>
+						<?php echo do_shortcode('[RSSImport feedurl="https://hortical.f5sites.com/feed/"]'); ?>
+					</div>
+
+					<hr>
+
+					<div class="col-md-6 col-sm-12">
+						<h3>Portfolio</h3>
+						<?php echo do_shortcode('[RSSImport feedurl="https://portfolio.franciscomat.com/feed/"]'); ?>
+					</div>
 					
-						<!--p style="text-align: center;">My site for professional and personal stuff, simple things related to ME</p-->
+					<div class="col-md-6 col-sm-12">
+						<h3>Pensamentos</h3>
+						<?php echo do_shortcode('[RSSImport feedurl="https://pensamentos.franciscomat.com/feed/"]'); ?>
 					</div>
+
+					<hr>
 
 					<div class="col-md-6 col-sm-12">
-						<h3>Posts Brasil</h3>
-						<?php echo do_shortcode('[display-posts tag="lang-pt"]'); ?>
+						<h3>Source</h3>
+						<?php echo do_shortcode('[RSSImport feedurl="https://source.f5sites.com/feed/"]'); ?>
 					</div>
+
+					<p style="text-align: center;"><?php echo do_shortcode('[startups-links url="www.franciscomat.com"]'); ?></p>
+					
 				</div>
-
-				<hr>
-
-				<div class="col-md-6 col-sm-12">
-					<h3>Posts Spañol</h3>
-					<?php echo do_shortcode('[display-posts tag="lang-es"]'); ?>
-				</div>
-
-				<div class="col-md-6 col-sm-12">
-					<h3>Posts in English</h3>
-					<?php echo do_shortcode('[display-posts tag="lang-en"]'); ?>
-				</div>
-
-				<hr>
-
-				<div class="col-md-6 col-sm-12">
-					<h3>CursoWP</h3>
-					<?php echo do_shortcode('[RSSImport feedurl="https://www.cursowp.com.br/feed/"]'); ?>
-				</div>
-
-				<div class="col-md-6 col-sm-12">
-					<h3>Hortical</h3>
-					<?php echo do_shortcode('[RSSImport feedurl="https://hortical.f5sites.com/feed/"]'); ?>
-				</div>
-
-				<hr>
-
-				<div class="col-md-6 col-sm-12">
-					<h3>Portfolio</h3>
-					<?php echo do_shortcode('[RSSImport feedurl="https://portfolio.franciscomat.com/feed/"]'); ?>
-				</div>
-				
-				<div class="col-md-6 col-sm-12">
-					<h3>Pensamentos</h3>
-					<?php echo do_shortcode('[RSSImport feedurl="https://pensamentos.franciscomat.com/feed/"]'); ?>
-				</div>
-
-				<hr>
-
-				<div class="col-md-6 col-sm-12">
-					<h3>Source</h3>
-					<?php echo do_shortcode('[RSSImport feedurl="https://source.f5sites.com/feed/"]'); ?>
-				</div>
-
-				<p style="text-align: center;"><?php echo do_shortcode('[startups-links url="www.franciscomat.com"]'); ?></p>
-				
 			</div>
-		</div>
 		<? } else {
+			if($_SERVER["HTTP_HOST"]=="portfolio.franciscomat.com") { ?>
+			<style type="text/css">
+				body .rt-tpg-container .rt-tpg-isotope-buttons .selected {
+					background: #67A8CB !important;
+				}
+				.panel-content .wrap {
+					padding-top: 0 !important;
+				}
+				.entry-header {
+					display: none;
+				}
+				.entry-content {
+					width: 100% !important;
+				}
+				.rt-tpg-container .isotope1 .rt-holder {
+					position: relative;
+					height: 320px !important;
+					min-height: 320px !important;
+					background: none !important;
+				}
+				.rt-tpg-container .isotope1 .rt-holder a {
+					text-decoration: none !important;
+					color: #FFF !important;
+				}
+				.rt-tpg-container .isotope1 .rt-holder .rt-detail {
+					background: rgba(0,0,0,0.85);
+					position: absolute;
+					bottom: 60px;
+					height: auto;
+					width: 100%;
+					padding-top: 4px !important;
+				}
+				.rt-tpg-container .isotope1 .rt-holder .post-meta-user,
+				.rt-tpg-container .isotope1 .rt-holder .post-meta-tags {
+					display: none !important;
+				}
+				.rt-tpg-container .isotope1 .rt-holder:hover .post-meta-user,
+				.rt-tpg-container .isotope1 .rt-holder:hover .post-meta-tags {
+					display: block !important;
+				}
+				.rt-tpg-container .isotope1 .rt-holder .entry-title a {
+					color: #67A8CB !important;
+					font-size: 20px;
+					line-height: 30px;
+				}
+				.rt-tpg-container .isotope1 .rt-holder .date {
+					color: #FFF !important;
+					font-size: 16px;
+				}
+				.rt-equal-height {
+					height: auto !important;
+					min-height: auto !important;
+				}
+				.rt-tpg-container h2 {
+					height: auto !important;
+				}
+				.rt-tpg-container h2 a {
+					position: relative  !important;
+				}
+			</style>
+			<?php }
+			
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post();
 					get_template_part( 'template-parts/page/content', 'front-page' );
