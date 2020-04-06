@@ -35,7 +35,7 @@ get_header(); ?>
 						</div>
 
 						<div class="col-md-6 col-sm-12">
-							<h3>Posts Brasil</h3>
+							<h3>Blog Brasil</h3>
 							<?php echo do_shortcode('[display-posts tag="lang-pt"]'); ?>
 						</div>
 					</div>
@@ -43,12 +43,12 @@ get_header(); ?>
 					<hr>
 
 					<div class="col-md-6 col-sm-12">
-						<h3>Posts Spañol</h3>
+						<h3>Blog Spañol</h3>
 						<?php echo do_shortcode('[display-posts tag="lang-es"]'); ?>
 					</div>
 
 					<div class="col-md-6 col-sm-12">
-						<h3>Posts in English</h3>
+						<h3>Blog USA</h3>
 						<?php echo do_shortcode('[display-posts tag="lang-en"]'); ?>
 					</div>
 
