@@ -26,8 +26,8 @@ get_header(); ?>
 			</style>
 			<div class="wrap">
 				<div class="entry-content">
-					<div style="display: flex; padding-top: 20px;">
-						<div class="col-md-6 col-sm-12">
+					<div style="padding-top: 20px;">
+						<div class="col-md-6 col-sm-12" style="height: 300px;">
 							<img src="https://www.franciscomat.com/wp-content/uploads/shared-wp-posts-uploads-dir/2017/08/fmm-frente.jpeg" alt="Foto de Francisco" style="width: 200px; border-radius: 200px;-webkit-transform: translate(-50%, -50%);  
 	    transform: translate(-50%, -50%); position: absolute; top: 50%; left: 50%;" class="align-middle">
 						
