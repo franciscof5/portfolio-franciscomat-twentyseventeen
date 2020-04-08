@@ -21,16 +21,26 @@ get_header(); ?>
 			<style type="text/css">
 				h3 {font-family: "lobster", Arial, Helvetica, sans-serif; margin-bottom: 0px; font-size: 30px; color: #67A8CB !important;}
 				ul {padding-left: 10px;}
-				ul li {padding-bottom: 4px;}
+				ul li {
+					font-size: 15px;
+					padding-bottom: 4px;
+				}
 				hr {clear: both; background: #67A8CB !important;}
+				.minha-thumb {
+					width: 300px;
+					height: 300px;
+					border-radius: 200px;
+					-webkit-transform: translate(-50%, -50%);  
+	    			transform: translate(-50%, -50%); 
+	    			position: absolute; 
+	    			top: 50%; left: 50%;
+				}
 			</style>
 			<div class="wrap">
 				<div class="entry-content">
 					<div style="padding-top: 20px;">
-						<div class="col-md-6 col-sm-12" style="height: 300px;">
-							<img src="https://www.franciscomat.com/wp-content/uploads/shared-wp-posts-uploads-dir/2017/08/fmm-frente.jpeg" alt="Foto de Francisco" style="width: 200px; border-radius: 200px;-webkit-transform: translate(-50%, -50%);  
-	    transform: translate(-50%, -50%); position: absolute; top: 50%; left: 50%;" class="align-middle">
-						
+						<div class="col-md-6 col-sm-12" style="height: 360px;">
+							<img src="https://www.franciscomat.com/wp-content/uploads/shared-wp-posts-uploads-dir/2017/08/fmm-frente.jpeg" alt="Foto de Francisco" class="align-middle minha-thumb">
 							<!--p style="text-align: center;">My site for professional and personal stuff, simple things related to ME</p-->
 						</div>
 
