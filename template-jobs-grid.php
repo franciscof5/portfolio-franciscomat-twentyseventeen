@@ -4,7 +4,7 @@
  *
  **/
 
-get_header(); die; ?>
+get_header(); ?>
 
 <style type="text/css">
 	.rt-tpg-container .isotope1 .rt-holder {
